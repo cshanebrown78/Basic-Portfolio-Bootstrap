@@ -7,7 +7,8 @@ body {
     background-image: url("../images/background.png");
     overflow: auto;
     color: #777777;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 html, body {
@@ -43,7 +44,7 @@ html, body {
     margin: 0 0 40px;
     background: #ffffff;
     border: 1px solid #dddddd;
-
+    flex: 1 0 auto;
 }
 
 .main h1 {
@@ -79,6 +80,16 @@ header {
     border-bottom: 2px solid #cccccc;        
 }
 
+.navbar {
+    padding: 0;
+    background-color: #ffffff !important;
+}
+
+.navbar-nav {
+    padding-left: 250px;
+    font-size: 18px;
+}
+
 #heading #logo {
     float: left;
     background: #4aaaa5;
@@ -93,21 +104,9 @@ header {
     padding: 0 20px 0 20px;
 }
 
-#heading li {
-    line-height: 60px;
-    margin-bottom: -20px;
+#heading a:hover {
+    color: blue;
 }
-
-#heading a {
-    text-decoration: none;
-    color: #777777;
-    font-size: 18px;
-}
-
-/* #heading a #b1 { */
-    /* border-left: 1px solid #efefef; */
-    /* border-right: 1px solid #efefef; */
-/* } */
 
 /* profile pic */
 
@@ -117,6 +116,33 @@ header {
     height: auto;
     padding-right: 20px;
     margin-top: 8px;
+}
+
+/* portfolio */
+
+.img-fluid {
+    margin-bottom: 30px;
+    
+}
+
+.col-sm-4 {
+    padding: 0;
+    margin-right: 30px;
+}
+
+
+.col-sm-4 h3 {
+    position: absolute;
+    float: left;
+    width: 100%;
+    bottom: 30px;
+    color: #ffffff;
+    background: #4aaaa5;
+    z-index: 15;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* footer */
@@ -132,18 +158,10 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    flex-shrink: 0;
+    z-index: 99;
 }
 
-/* footer .sticky { */
-    /* height: 105px; */
-/* } */
-
-.wrapper {
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto -105px;
-}
 
 .foot p {
     margin-bottom: 0;
