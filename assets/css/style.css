@@ -87,7 +87,7 @@ header {
 
 .navbar-nav {
     padding-left: 250px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #heading #logo {
@@ -143,6 +143,13 @@ header {
     padding: 15px;
     font-size: 18px;
     font-weight: 700;
+}
+
+/* contact */
+
+button {
+    background: #4aaaa5;
+    color: #ffffff
 }
 
 /* footer */
